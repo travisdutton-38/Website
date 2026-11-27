@@ -197,10 +197,32 @@ section.block{padding-top:72px;padding-bottom:72px}
 <section id="work" class="view" aria-label="Portfolio">
   <nav class="doctabs" aria-label="Portfolio projects">
     <div class="wrap">
-      <a href="#p1">Soft robotics</a>
       <a href="#p2">Rover chassis</a>
+      <a href="#p1">Soft robotics</a>
     </div>
   </nav>
+
+  <article class="case" id="p2">
+    <div class="vp"><div class="wrap">
+      <div class="story">
+        <h2>Rover chassis</h2>
+        <p>For the UMD Loop University Rover Challenge (URC) Team, myself and members of the chassis subsystem designed the rover chassis in SolidWorks sheet metal. I helped with the sheet metal design, and I used SolidWorks FEA to validate the sheet metal thickness we chose.</p>
+        <p>I modeled a static study under the worst-case scenario for the rover to make sure the chassis is thick enough that it does not deform permanently and does not deflect too much. I also did hand calculations to confirm that the beam running through the center of the chassis does not buckle under any conditions.</p>
+        <div class="shots">
+          <figure><img src="img/chassis-assembly.png" alt="Rover chassis assembly in SolidWorks with the top plate removed"><figcaption>Chassis assembly, top plate hidden</figcaption></figure>
+          <figure><img src="img/chassis-fea-setup.png" alt="Chassis FEA model with mesh, loads and fixtures applied"><figcaption>FEA setup: mesh, loads and fixtures</figcaption></figure>
+          <figure><img src="img/chassis-stress.png" alt="von Mises stress plot of the chassis under the worst-case load"><figcaption>von Mises stress, worst-case load</figcaption></figure>
+          <figure><img src="img/chassis-displacement.png" alt="Displacement plot of the chassis under the worst-case load"><figcaption>Displacement, worst-case load</figcaption></figure>
+        </div>
+      </div>
+      <div class="pm"><h4>Properties</h4><dl>
+        <div><dt>Team</dt><dd>UMD Loop, University Rover Challenge (URC)</dd></div>
+        <div><dt>Role</dt><dd>Chassis Engineer</dd></div>
+        <div><dt>When</dt><dd>Sep 2026 to present</dd></div>
+        <div><dt>Tools</dt><dd>SolidWorks sheet metal, SolidWorks FEA</dd></div>
+      </dl></div>
+    </div></div>
+  </article>
 
   <article class="case" id="p1">
     <div class="vp"><div class="wrap">
@@ -222,28 +244,6 @@ section.block{padding-top:72px;padding-bottom:72px}
         <div><dt>When</dt><dd>Sep 2025 to present</dd></div>
         <div><dt>Tools</dt><dd>SolidWorks, LCD 3D printing</dd></div>
         <div><dt>Papers</dt><dd>2 co-authored (2026)</dd></div>
-      </dl></div>
-    </div></div>
-  </article>
-
-  <article class="case" id="p2">
-    <div class="vp"><div class="wrap">
-      <div class="story">
-        <h2>Rover chassis</h2>
-        <p>For the UMD Loop University Rover Challenge (URC) Team, myself and members of the chassis subsystem designed the rover chassis in SolidWorks sheet metal. I helped with the sheet metal design, and I used SolidWorks FEA to validate the sheet metal thickness we chose.</p>
-        <p>I modeled a static study under the worst-case scenario for the rover to make sure the chassis is thick enough that it does not deform permanently and does not deflect too much. I also did hand calculations to confirm that the beam running through the center of the chassis does not buckle under any conditions.</p>
-        <div class="shots">
-          <figure><img src="img/chassis-assembly.png" alt="Rover chassis assembly in SolidWorks with the top plate removed"><figcaption>Chassis assembly, top plate hidden</figcaption></figure>
-          <figure><img src="img/chassis-fea-setup.png" alt="Chassis FEA model with mesh, loads and fixtures applied"><figcaption>FEA setup: mesh, loads and fixtures</figcaption></figure>
-          <figure><img src="img/chassis-stress.png" alt="von Mises stress plot of the chassis under the worst-case load"><figcaption>von Mises stress, worst-case load</figcaption></figure>
-          <figure><img src="img/chassis-displacement.png" alt="Displacement plot of the chassis under the worst-case load"><figcaption>Displacement, worst-case load</figcaption></figure>
-        </div>
-      </div>
-      <div class="pm"><h4>Properties</h4><dl>
-        <div><dt>Team</dt><dd>UMD Loop, University Rover Challenge (URC)</dd></div>
-        <div><dt>Role</dt><dd>Chassis Engineer</dd></div>
-        <div><dt>When</dt><dd>Sep 2026 to present</dd></div>
-        <div><dt>Tools</dt><dd>SolidWorks sheet metal, SolidWorks FEA</dd></div>
       </dl></div>
     </div></div>
   </article>
@@ -272,8 +272,8 @@ section.block{padding-top:72px;padding-bottom:72px}
     <h2 id="projects-h">Projects</h2>
     <p class="sub">Pick a project in the tree to preview it.</p>
 
-    <input class="sr" type="radio" name="proj" id="r1" checked>
-    <input class="sr" type="radio" name="proj" id="r2">
+    <input class="sr" type="radio" name="proj" id="r2" checked>
+    <input class="sr" type="radio" name="proj" id="r1">
     <input class="sr" type="radio" name="proj" id="r4">
 
     <div class="browser">
@@ -281,8 +281,8 @@ section.block{padding-top:72px;padding-bottom:72px}
         <div class="mb-root"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="1.5" y="1.5" width="6" height="6" fill="none" stroke="#1763C6" stroke-width="1.3"/><rect x="8.5" y="8.5" width="6" height="6" fill="none" stroke="#1763C6" stroke-width="1.3"/><path d="M7.5 4.5h3.5v4" fill="none" stroke="#1763C6" stroke-width="1.3"/></svg>Travis_Dutton.SLDASM</div>
         <span class="mb-group"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M1.5 3.5h4l1 1.5h6v7.5h-11z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Portfolio</span>
         <ul>
-          <li><label for="r1"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1 12.5 4v6L7 13 1.5 10V4z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Soft robotics<small>2025</small></label></li>
           <li><label for="r2"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1 12.5 4v6L7 13 1.5 10V4z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Rover chassis<small>2026</small></label></li>
+          <li><label for="r1"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1 12.5 4v6L7 13 1.5 10V4z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Soft robotics<small>2025</small></label></li>
         </ul>
         <span class="mb-group"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M1.5 3.5h4l1 1.5h6v7.5h-11z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Other projects</span>
         <ul>
@@ -292,15 +292,6 @@ section.block{padding-top:72px;padding-bottom:72px}
       </div>
 
       <div class="previews">
-        <div class="pv pv1">
-          <div class="vp"><img src="img/actuator-cad.jpg" alt="Fluidic actuator design, SolidWorks render"><span class="vp-label">Actuator design, SolidWorks</span></div>
-          <div class="side">
-            <h3>Soft robotics</h3>
-            <p>Fluidic actuator and microchip designs for a future soft robotic hand, plus testing of microfluidic diodes and transistors.</p>
-            <div class="pm"><h4>Properties</h4><dl><div><dt>Role</dt><dd>CAD Lead</dd></div><div><dt>Tools</dt><dd>SolidWorks, LCD 3D printing</dd></div><div><dt>Papers</dt><dd>2 co-authored</dd></div></dl></div>
-            <a class="btn primary" href="#p1">Open in portfolio</a>
-          </div>
-        </div>
         <div class="pv pv2">
           <div class="vp"><img src="img/chassis-assembly.png" alt="Rover chassis assembly, SolidWorks sheet metal"><span class="vp-label">Chassis assembly, SolidWorks</span></div>
           <div class="side">
@@ -310,7 +301,17 @@ section.block{padding-top:72px;padding-bottom:72px}
             <a class="btn primary" href="#p2">Open in portfolio</a>
           </div>
         </div>
-        <div class="pv pv4 textonly">
+        <div class="pv pv1">
+          <div class="vp"><img src="img/actuator-cad.jpg" alt="Fluidic actuator design, SolidWorks render"><span class="vp-label">Actuator design, SolidWorks</span></div>
+          <div class="side">
+            <h3>Soft robotics</h3>
+            <p>Fluidic actuator and microchip designs for a future soft robotic hand, plus testing of microfluidic diodes and transistors.</p>
+            <div class="pm"><h4>Properties</h4><dl><div><dt>Role</dt><dd>CAD Lead</dd></div><div><dt>Tools</dt><dd>SolidWorks, LCD 3D printing</dd></div><div><dt>Papers</dt><dd>2 co-authored</dd></div></dl></div>
+            <a class="btn primary" href="#p1">Open in portfolio</a>
+          </div>
+        </div>
+        <div class="pv pv4">
+          <div class="vp"><img class="photo" src="img/I-beam.png" alt="Wooden I-beam"><span class="vp-label">Wooden I-beam</span></div>
           <div class="side">
             <h3>Wooden I-beam</h3>
             <p>Designed a wooden I-beam to withstand a point load in a universal testing machine. Calculations in Python gave a strength-to-weight ratio of over 2,300:1. I compared the predicted failure load with the actual failure load of 1,520 lbf and identified the failure mode.</p>
