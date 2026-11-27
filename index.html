@@ -103,9 +103,9 @@ section.block{padding-top:72px;padding-bottom:72px}
 .mb-group + ul + .mb-group{margin-top:8px}
 .ph{display:grid;place-items:center;text-align:center;color:var(--muted);font-size:14px;padding:24px;width:min(100%,520px);aspect-ratio:16/10;border:1.5px dashed #9AA4AF;background:rgba(255,255,255,.5)}
 
-#r1:checked ~ .browser .pv1,#r2:checked ~ .browser .pv2,#r3:checked ~ .browser .pv3,#r4:checked ~ .browser .pv4{display:grid}
-#r1:checked ~ .browser label[for="r1"],#r2:checked ~ .browser label[for="r2"],#r3:checked ~ .browser label[for="r3"],#r4:checked ~ .browser label[for="r4"]{background:var(--select-bg);color:var(--select);font-weight:600;box-shadow:inset 2px 0 0 var(--select)}
-#r1:focus-visible ~ .browser label[for="r1"],#r2:focus-visible ~ .browser label[for="r2"],#r3:focus-visible ~ .browser label[for="r3"],#r4:focus-visible ~ .browser label[for="r4"]{outline:2px solid var(--select);outline-offset:-2px}
+#r1:checked ~ .browser .pv1,#r2:checked ~ .browser .pv2,#r4:checked ~ .browser .pv4{display:grid}
+#r1:checked ~ .browser label[for="r1"],#r2:checked ~ .browser label[for="r2"],#r4:checked ~ .browser label[for="r4"]{background:var(--select-bg);color:var(--select);font-weight:600;box-shadow:inset 2px 0 0 var(--select)}
+#r1:focus-visible ~ .browser label[for="r1"],#r2:focus-visible ~ .browser label[for="r2"],#r4:focus-visible ~ .browser label[for="r4"]{outline:2px solid var(--select);outline-offset:-2px}
 
 /* property panel */
 .pm{font-size:15px;border:1px solid var(--edge);border-radius:3px;background:var(--white)}
@@ -198,8 +198,7 @@ section.block{padding-top:72px;padding-bottom:72px}
   <nav class="doctabs" aria-label="Portfolio projects">
     <div class="wrap">
       <a href="#p1">Soft robotics</a>
-      <a href="#p2">Miniature arm controller</a>
-      <a href="#p3">Over terrain vehicle</a>
+      <a href="#p2">Rover chassis</a>
     </div>
   </nav>
 
@@ -230,38 +229,21 @@ section.block{padding-top:72px;padding-bottom:72px}
   <article class="case" id="p2">
     <div class="vp"><div class="wrap">
       <div class="story">
-        <h2>Miniature arm controller</h2>
-        <p>For the UMD Loop Rover Team, I worked with eight other students to produce a design option for a miniature arm controller (MAC). The MAC controls the rover's arm. Because it is a directly scaled-down replica of the arm, it makes the arm easier to control.</p>
-        <p>I did most of my team's CAD in SolidWorks and was most involved with the base and its interface with the rest of the MAC. The interface lets the arm rotate freely and stay resilient under loading over time.</p>
+        <h2>Rover chassis</h2>
+        <p>For the UMD Loop University Rover Challenge (URC) Team, I and other members of the chassis subsystem designed the rover chassis in SolidWorks sheet metal. I helped with the sheet metal design, and I used SolidWorks FEA to validate the sheet metal thickness we chose.</p>
+        <p>I modeled a static study under the worst-case scenario for the rover to make sure the chassis is thick enough that it does not deform permanently and does not deflect too much. I also did hand calculations to confirm that the beam running through the center of the chassis does not buckle under any conditions.</p>
         <div class="shots">
-          <figure><img src="img/mac-assembly.jpg" alt="Full MAC assembly"><figcaption>Full MAC assembly</figcaption></figure>
-          <figure><img src="img/mac-base.jpg" alt="Base-to-MAC interface"><figcaption>Base-to-MAC interface</figcaption></figure>
+          <figure><img src="img/chassis-assembly.png" alt="Rover chassis assembly in SolidWorks with the top plate removed"><figcaption>Chassis assembly, top plate hidden</figcaption></figure>
+          <figure><img src="img/chassis-fea-setup.png" alt="Chassis FEA model with mesh, loads and fixtures applied"><figcaption>FEA setup: mesh, loads and fixtures</figcaption></figure>
+          <figure><img src="img/chassis-stress.png" alt="von Mises stress plot of the chassis under the worst-case load"><figcaption>von Mises stress, worst-case load</figcaption></figure>
+          <figure><img src="img/chassis-displacement.png" alt="Displacement plot of the chassis under the worst-case load"><figcaption>Displacement, worst-case load</figcaption></figure>
         </div>
       </div>
       <div class="pm"><h4>Properties</h4><dl>
-        <div><dt>Team</dt><dd>UMD Loop Rover Team, 8 students</dd></div>
-        <div><dt>Role</dt><dd>Mechanical Designer</dd></div>
-        <div><dt>Tools</dt><dd>SolidWorks</dd></div>
-      </dl></div>
-    </div></div>
-  </article>
-
-  <article class="case" id="p3">
-    <div class="vp"><div class="wrap">
-      <div class="story">
-        <h2>Over terrain vehicle</h2>
-        <p>Seven other students and I built an over terrain vehicle (OTV) that could drive autonomously to a pylon, through an obstacle course, and to a destination zone.</p>
-        <p>I modeled the vehicle's parts and assembled them in Fusion 360. After the first build, we analyzed how the components performed and kept improving the design.</p>
-        <div class="shots">
-          <figure><img src="img/otv-photo.jpg" alt="The finished OTV"><figcaption>The OTV</figcaption></figure>
-          <figure><img src="img/otv-cad.jpg" alt="Fusion 360 model of the OTV"><figcaption>CAD model, Fusion 360</figcaption></figure>
-        </div>
-      </div>
-      <div class="pm"><h4>Properties</h4><dl>
-        <div><dt>Team</dt><dd>8 students</dd></div>
-        <div><dt>Role</dt><dd>Part modeling, full assembly</dd></div>
-        <div><dt>Dates</dt><dd>Feb to May 2025</dd></div>
-        <div><dt>Tools</dt><dd>Fusion 360</dd></div>
+        <div><dt>Team</dt><dd>UMD Loop, University Rover Challenge, chassis subsystem</dd></div>
+        <div><dt>Role</dt><dd>Chassis Engineer, sheet metal design and FEA</dd></div>
+        <div><dt>Dates</dt><dd>Sep 2026 to present</dd></div>
+        <div><dt>Tools</dt><dd>SolidWorks sheet metal, SolidWorks FEA</dd></div>
       </dl></div>
     </div></div>
   </article>
@@ -278,8 +260,8 @@ section.block{padding-top:72px;padding-bottom:72px}
           <div class="btns"><a class="btn primary" href="#projects">Browse projects</a><a class="btn" href="travis-dutton-resume.pdf">Resume (PDF)</a></div>
         </div>
         <figure class="hero-fig">
-          <img class="model" src="img/mac-assembly.jpg" alt="Miniature arm controller assembly, SolidWorks render">
-          <figcaption><strong>Miniature arm controller, UMD Loop Rover Team.</strong> A scaled-down replica of the rover's arm, used to control it. I did most of the CAD in SolidWorks, including the base and its interface.</figcaption>
+          <img class="model" src="img/chassis-assembly.png" alt="Rover chassis assembly, SolidWorks sheet metal">
+          <figcaption><strong>Rover chassis, UMD Loop URC Team.</strong> A sheet metal chassis designed in SolidWorks. I helped with the design and used SolidWorks FEA to validate the sheet metal thickness.</figcaption>
         </figure>
       </div>
     </div>
@@ -292,7 +274,6 @@ section.block{padding-top:72px;padding-bottom:72px}
 
     <input class="sr" type="radio" name="proj" id="r1" checked>
     <input class="sr" type="radio" name="proj" id="r2">
-    <input class="sr" type="radio" name="proj" id="r3">
     <input class="sr" type="radio" name="proj" id="r4">
 
     <div class="browser">
@@ -301,8 +282,7 @@ section.block{padding-top:72px;padding-bottom:72px}
         <span class="mb-group"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M1.5 3.5h4l1 1.5h6v7.5h-11z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Portfolio</span>
         <ul>
           <li><label for="r1"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1 12.5 4v6L7 13 1.5 10V4z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Soft robotics<small>2025</small></label></li>
-          <li><label for="r2"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1 12.5 4v6L7 13 1.5 10V4z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Arm controller<small>2026</small></label></li>
-          <li><label for="r3"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1 12.5 4v6L7 13 1.5 10V4z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Over terrain vehicle<small>2025</small></label></li>
+          <li><label for="r2"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1 12.5 4v6L7 13 1.5 10V4z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Rover chassis<small>2026</small></label></li>
         </ul>
         <span class="mb-group"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M1.5 3.5h4l1 1.5h6v7.5h-11z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Other projects</span>
         <ul>
@@ -322,21 +302,12 @@ section.block{padding-top:72px;padding-bottom:72px}
           </div>
         </div>
         <div class="pv pv2">
-          <div class="vp"><img src="img/mac-base.jpg" alt="Base-to-MAC interface"><span class="vp-label">Base-to-MAC interface, SolidWorks</span></div>
+          <div class="vp"><img src="img/chassis-assembly.png" alt="Rover chassis assembly, SolidWorks sheet metal"><span class="vp-label">Chassis assembly, SolidWorks</span></div>
           <div class="side">
-            <h3>Miniature arm controller</h3>
-            <p>A scaled-down replica of the rover's arm, used to control it. I did most of the CAD, focused on the base and its interface.</p>
-            <div class="pm"><h4>Properties</h4><dl><div><dt>Team</dt><dd>UMD Loop, 9</dd></div><div><dt>Tools</dt><dd>SolidWorks</dd></div></dl></div>
+            <h3>Rover chassis</h3>
+            <p>A sheet metal rover chassis for UMD Loop's URC team. I helped with the design and used SolidWorks FEA to validate the sheet metal thickness.</p>
+            <div class="pm"><h4>Properties</h4><dl><div><dt>Team</dt><dd>UMD Loop, URC</dd></div><div><dt>Tools</dt><dd>SolidWorks, SolidWorks FEA</dd></div></dl></div>
             <a class="btn primary" href="#p2">Open in portfolio</a>
-          </div>
-        </div>
-        <div class="pv pv3">
-          <div class="vp"><img class="photo" src="img/otv-photo.jpg" alt="The finished OTV"><span class="vp-label">The OTV</span></div>
-          <div class="side">
-            <h3>Over terrain vehicle</h3>
-            <p>An autonomous vehicle that drives to a pylon, through an obstacle course, and to a destination zone. I modeled and assembled it in Fusion 360.</p>
-            <div class="pm"><h4>Properties</h4><dl><div><dt>Team</dt><dd>8 students</dd></div><div><dt>Tools</dt><dd>Fusion 360</dd></div></dl></div>
-            <a class="btn primary" href="#p3">Open in portfolio</a>
           </div>
         </div>
         <div class="pv pv4 textonly">
