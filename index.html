@@ -103,9 +103,9 @@ section.block{padding-top:72px;padding-bottom:72px}
 .mb-group + ul + .mb-group{margin-top:8px}
 .ph{display:grid;place-items:center;text-align:center;color:var(--muted);font-size:14px;padding:24px;width:min(100%,520px);aspect-ratio:16/10;border:1.5px dashed #9AA4AF;background:rgba(255,255,255,.5)}
 
-#r1:checked ~ .browser .pv1,#r2:checked ~ .browser .pv2,#r4:checked ~ .browser .pv4{display:grid}
-#r1:checked ~ .browser label[for="r1"],#r2:checked ~ .browser label[for="r2"],#r4:checked ~ .browser label[for="r4"]{background:var(--select-bg);color:var(--select);font-weight:600;box-shadow:inset 2px 0 0 var(--select)}
-#r1:focus-visible ~ .browser label[for="r1"],#r2:focus-visible ~ .browser label[for="r2"],#r4:focus-visible ~ .browser label[for="r4"]{outline:2px solid var(--select);outline-offset:-2px}
+#r1:checked ~ .browser .pv1,#r2:checked ~ .browser .pv2,#r3:checked ~ .browser .pv3,#r4:checked ~ .browser .pv4{display:grid}
+#r1:checked ~ .browser label[for="r1"],#r2:checked ~ .browser label[for="r2"],#r3:checked ~ .browser label[for="r3"],#r4:checked ~ .browser label[for="r4"]{background:var(--select-bg);color:var(--select);font-weight:600;box-shadow:inset 2px 0 0 var(--select)}
+#r1:focus-visible ~ .browser label[for="r1"],#r2:focus-visible ~ .browser label[for="r2"],#r3:focus-visible ~ .browser label[for="r3"],#r4:focus-visible ~ .browser label[for="r4"]{outline:2px solid var(--select);outline-offset:-2px}
 
 /* property panel */
 .pm{font-size:15px;border:1px solid var(--edge);border-radius:3px;background:var(--white)}
@@ -274,6 +274,7 @@ section.block{padding-top:72px;padding-bottom:72px}
 
     <input class="sr" type="radio" name="proj" id="r2" checked>
     <input class="sr" type="radio" name="proj" id="r1">
+    <input class="sr" type="radio" name="proj" id="r3">
     <input class="sr" type="radio" name="proj" id="r4">
 
     <div class="browser">
@@ -287,6 +288,7 @@ section.block{padding-top:72px;padding-bottom:72px}
         <span class="mb-group"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M1.5 3.5h4l1 1.5h6v7.5h-11z" fill="none" stroke="currentColor" stroke-width="1.3"/></svg>Other projects</span>
         <ul>
           <li><label for="r4"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1 12.5 4v6L7 13 1.5 10V4z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Wooden I-beam<small>2026</small></label></li>
+          <li><label for="r3"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1 12.5 4v6L7 13 1.5 10V4z" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>Over terrain vehicle<small>2025</small></label></li>
         </ul>
         <div class="extra"><a class="btn" href="#work">View portfolio</a></div>
       </div>
@@ -311,11 +313,19 @@ section.block{padding-top:72px;padding-bottom:72px}
           </div>
         </div>
         <div class="pv pv4">
-          <div class="vp"><img class="photo" src="img/I-beam.jpeg" alt="Wooden I-beam"><span class="vp-label">Wooden I-beam</span></div>
+          <div class="vp"><img class="photo" src="img/I-beam.png" alt="Wooden I-beam"><span class="vp-label">Wooden I-beam</span></div>
           <div class="side">
             <h3>Wooden I-beam</h3>
             <p>Designed a wooden I-beam to withstand a point load in a universal testing machine. Calculations in Python gave a strength-to-weight ratio of over 2,300:1. I compared the predicted failure load with the actual failure load of 1,520 lbf and identified the failure mode.</p>
             <div class="pm"><h4>Properties</h4><dl><div><dt>Role</dt><dd>Project team member</dd></div><div><dt>When</dt><dd>Mar to May 2026</dd></div><div><dt>Tools</dt><dd>Python</dd></div><div><dt>Failure load</dt><dd>1,520 lbf</dd></div></dl></div>
+          </div>
+        </div>
+        <div class="pv pv3">
+          <div class="vp"><img class="photo" src="img/otv-photo.jpg" alt="The finished OTV"><span class="vp-label">The OTV</span></div>
+          <div class="side">
+            <h3>Over terrain vehicle</h3>
+            <p>An autonomous vehicle that drives to a pylon, through an obstacle course, and to a destination zone. I modeled the parts and assembled them in Fusion 360.</p>
+            <div class="pm"><h4>Properties</h4><dl><div><dt>Team</dt><dd>8 students</dd></div><div><dt>Role</dt><dd>Part modeling, full assembly</dd></div><div><dt>Dates</dt><dd>Feb to May 2025</dd></div><div><dt>Tools</dt><dd>Fusion 360</dd></div></dl></div>
           </div>
         </div>
       </div>
